@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B342A141FB2141E006FD363 /* FoundationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422F31FB213B400B66658 /* FoundationSpec.swift */; };
+		4B342A171FB224D0006FD363 /* RxSwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A151FB224B6006FD363 /* RxSwiftSpec.swift */; };
+		4B342A1B1FB225D0006FD363 /* ThenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A191FB2254C006FD363 /* ThenSpec.swift */; };
 		4B7752EC1FB1EAAA007B288E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752EA1FB1EAAA007B288E /* Main.storyboard */; };
 		4B7752EE1FB1EAAA007B288E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752ED1FB1EAAA007B288E /* Assets.xcassets */; };
 		4B7752F11FB1EAAA007B288E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752EF1FB1EAAA007B288E /* LaunchScreen.storyboard */; };
@@ -19,6 +22,17 @@
 		4BD422AC1FB2102E00B66658 /* RxReduxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A41FB2102D00B66658 /* RxReduxSwift.framework */; };
 		4BD422AD1FB2102E00B66658 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A51FB2102E00B66658 /* Cartography.framework */; };
 		4BD422AE1FB2102E00B66658 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A61FB2102E00B66658 /* RxSwift.framework */; };
+		4BD422D21FB211AA00B66658 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422B71FB211AA00B66658 /* Log.swift */; };
+		4BD422D81FB211AA00B66658 /* SharedSequenceConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422BF1FB211AA00B66658 /* SharedSequenceConvertibleType.swift */; };
+		4BD422D91FB211AA00B66658 /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422C01FB211AA00B66658 /* SerialDispatchQueueScheduler.swift */; };
+		4BD422DD1FB211AA00B66658 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422C41FB211AA00B66658 /* ObservableType.swift */; };
+		4BD422E11FB211AA00B66658 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422C91FB211AA00B66658 /* UIImage.swift */; };
+		4BD422EA1FB211ED00B66658 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422E91FB211ED00B66658 /* Then.swift */; };
+		4BD422EB1FB2132200B66658 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422CE1FB211AA00B66658 /* Sequence.swift */; };
+		4BD422EC1FB2132200B66658 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422CD1FB211AA00B66658 /* Collection.swift */; };
+		4BD422ED1FB2132200B66658 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422CC1FB211AA00B66658 /* Date.swift */; };
+		4BD422EE1FB2132200B66658 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422D11FB211AA00B66658 /* String.swift */; };
+		4BD422EF1FB2132200B66658 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422CF1FB211AA00B66658 /* NSObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B342A151FB224B6006FD363 /* RxSwiftSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSpec.swift; sourceTree = "<group>"; };
+		4B342A191FB2254C006FD363 /* ThenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThenSpec.swift; sourceTree = "<group>"; };
 		4B7752E31FB1EAA9007B288E /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7752EB1FB1EAAA007B288E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B7752ED1FB1EAAA007B288E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,18 @@
 		4BD422A41FB2102D00B66658 /* RxReduxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxReduxSwift.framework; path = Carthage/Build/iOS/RxReduxSwift.framework; sourceTree = "<group>"; };
 		4BD422A51FB2102E00B66658 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		4BD422A61FB2102E00B66658 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4BD422B71FB211AA00B66658 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		4BD422BF1FB211AA00B66658 /* SharedSequenceConvertibleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedSequenceConvertibleType.swift; sourceTree = "<group>"; };
+		4BD422C01FB211AA00B66658 /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
+		4BD422C41FB211AA00B66658 /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		4BD422C91FB211AA00B66658 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		4BD422CC1FB211AA00B66658 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		4BD422CD1FB211AA00B66658 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		4BD422CE1FB211AA00B66658 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		4BD422CF1FB211AA00B66658 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		4BD422D11FB211AA00B66658 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4BD422E91FB211ED00B66658 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		4BD422F31FB213B400B66658 /* FoundationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B342A181FB22526006FD363 /* FoundationSpec */ = {
+			isa = PBXGroup;
+			children = (
+				4B342A191FB2254C006FD363 /* ThenSpec.swift */,
+			);
+			path = FoundationSpec;
+			sourceTree = "<group>";
+		};
 		4B7752DA1FB1EAA9007B288E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +135,8 @@
 		4B7752E51FB1EAA9007B288E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4BD422BA1FB211AA00B66658 /* Extensions */,
+				4BD422B61FB211AA00B66658 /* Foundation */,
 				4BD422791FB1EF0F00B66658 /* AppDelegate.swift */,
 				4B7752F81FB1EB42007B288E /* Storyboards */,
 				4B7752FB1FB1EB62007B288E /* Supporting Files */,
@@ -128,6 +166,8 @@
 		4BD422801FB2081900B66658 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4BD422F21FB213A200B66658 /* ExtensionsSpec */,
+				4B342A181FB22526006FD363 /* FoundationSpec */,
 				4BD422831FB2081900B66658 /* Info.plist */,
 			);
 			path = Tests;
@@ -146,6 +186,66 @@
 				4BD422A11FB2102D00B66658 /* RxSwiftExt.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BD422B61FB211AA00B66658 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4BD422B71FB211AA00B66658 /* Log.swift */,
+				4BD422E91FB211ED00B66658 /* Then.swift */,
+			);
+			name = Foundation;
+			path = Sources/Foundation;
+			sourceTree = "<group>";
+		};
+		4BD422BA1FB211AA00B66658 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BD422CB1FB211AA00B66658 /* Foundation */,
+				4BD422C71FB211AA00B66658 /* UIKit */,
+				4BD422BB1FB211AA00B66658 /* RxSwift */,
+			);
+			name = Extensions;
+			path = Sources/Extensions;
+			sourceTree = "<group>";
+		};
+		4BD422BB1FB211AA00B66658 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4BD422C41FB211AA00B66658 /* ObservableType.swift */,
+				4BD422BF1FB211AA00B66658 /* SharedSequenceConvertibleType.swift */,
+				4BD422C01FB211AA00B66658 /* SerialDispatchQueueScheduler.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		4BD422C71FB211AA00B66658 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4BD422C91FB211AA00B66658 /* UIImage.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4BD422CB1FB211AA00B66658 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4BD422CE1FB211AA00B66658 /* Sequence.swift */,
+				4BD422CD1FB211AA00B66658 /* Collection.swift */,
+				4BD422CC1FB211AA00B66658 /* Date.swift */,
+				4BD422D11FB211AA00B66658 /* String.swift */,
+				4BD422CF1FB211AA00B66658 /* NSObject.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4BD422F21FB213A200B66658 /* ExtensionsSpec */ = {
+			isa = PBXGroup;
+			children = (
+				4BD422F31FB213B400B66658 /* FoundationSpec.swift */,
+				4B342A151FB224B6006FD363 /* RxSwiftSpec.swift */,
+			);
+			path = ExtensionsSpec;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +434,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD422EC1FB2132200B66658 /* Collection.swift in Sources */,
+				4BD422EE1FB2132200B66658 /* String.swift in Sources */,
+				4BD422ED1FB2132200B66658 /* Date.swift in Sources */,
+				4BD422D21FB211AA00B66658 /* Log.swift in Sources */,
+				4BD422EA1FB211ED00B66658 /* Then.swift in Sources */,
+				4BD422EB1FB2132200B66658 /* Sequence.swift in Sources */,
+				4BD422E11FB211AA00B66658 /* UIImage.swift in Sources */,
+				4BD422D91FB211AA00B66658 /* SerialDispatchQueueScheduler.swift in Sources */,
+				4BD422D81FB211AA00B66658 /* SharedSequenceConvertibleType.swift in Sources */,
+				4BD422EF1FB2132200B66658 /* NSObject.swift in Sources */,
+				4BD422DD1FB211AA00B66658 /* ObservableType.swift in Sources */,
 				4BD4227A1FB1EF0F00B66658 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +453,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B342A171FB224D0006FD363 /* RxSwiftSpec.swift in Sources */,
+				4B342A141FB2141E006FD363 /* FoundationSpec.swift in Sources */,
+				4B342A1B1FB225D0006FD363 /* ThenSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +523,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -466,6 +581,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -488,10 +604,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F36388UFRX;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsjung.camera;
@@ -509,10 +621,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F36388UFRX;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsjung.camera;
