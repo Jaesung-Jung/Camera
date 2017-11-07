@@ -1,0 +1,5 @@
+excluded:
+  - Carthage
+
+disabled_rules:
+  - identifier_name

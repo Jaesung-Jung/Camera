@@ -32,6 +32,7 @@
 		4BD422791FB1EF0F00B66658 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		4BD4227F1FB2081900B66658 /* Camera-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camera-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD422831FB2081900B66658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD422891FB208C700B66658 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 		4B7752FB1FB1EB62007B288E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BD422891FB208C700B66658 /* .swiftlint.yml */,
 				4B7752F21FB1EAAA007B288E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -116,6 +118,7 @@
 				4B7752DF1FB1EAA9007B288E /* Sources */,
 				4B7752E01FB1EAA9007B288E /* Frameworks */,
 				4B7752E11FB1EAA9007B288E /* Resources */,
+				4BD4228B1FB208E500B66658 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -133,6 +136,7 @@
 				4BD4227B1FB2081900B66658 /* Sources */,
 				4BD4227C1FB2081900B66658 /* Frameworks */,
 				4BD4227D1FB2081900B66658 /* Resources */,
+				4BD4229D1FB20FCA00B66658 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -203,6 +207,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BD4228B1FB208E500B66658 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nfi";
+		};
+		4BD4229D1FB20FCA00B66658 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B7752DF1FB1EAA9007B288E /* Sources */ = {
