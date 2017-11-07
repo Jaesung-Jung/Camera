@@ -18,7 +18,6 @@
 		4BD422A81FB2102E00B66658 /* ReduxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A01FB2102D00B66658 /* ReduxSwift.framework */; };
 		4BD422A91FB2102E00B66658 /* RxSwiftExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A11FB2102D00B66658 /* RxSwiftExt.framework */; };
 		4BD422AA1FB2102E00B66658 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A21FB2102D00B66658 /* RxCocoa.framework */; };
-		4BD422AB1FB2102E00B66658 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A31FB2102D00B66658 /* GPUImage.framework */; };
 		4BD422AC1FB2102E00B66658 /* RxReduxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A41FB2102D00B66658 /* RxReduxSwift.framework */; };
 		4BD422AD1FB2102E00B66658 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A51FB2102E00B66658 /* Cartography.framework */; };
 		4BD422AE1FB2102E00B66658 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD422A61FB2102E00B66658 /* RxSwift.framework */; };
@@ -84,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD422AB1FB2102E00B66658 /* GPUImage.framework in Frameworks */,
 				4BD422AD1FB2102E00B66658 /* Cartography.framework in Frameworks */,
 				4BD422A81FB2102E00B66658 /* ReduxSwift.framework in Frameworks */,
 				4BD422AE1FB2102E00B66658 /* RxSwift.framework in Frameworks */,
@@ -385,7 +383,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/GPUImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReduxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
@@ -396,7 +393,6 @@
 			);
 			name = Carthage;
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/GPUImage.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cartography.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReduxSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
