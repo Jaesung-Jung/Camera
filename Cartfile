@@ -1,0 +1,8 @@
+github "heyjerks/ReduxSwift"
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxSwiftExt"
+github "RxSwiftCommunity/RxGesture"
+github "robb/Cartography"
+github "BradLarson/GPUImage2" "master"
+github "Quick/Quick"
+github "Quick/Nimble"

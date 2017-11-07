@@ -93,7 +93,6 @@ fastlane/test_output
 # Carthage/Checkouts
 
 Carthage/
-Cartfile.resolved
 
 ### Swift.CocoaPods Stack ###
 ## CocoaPods GitIgnore Template

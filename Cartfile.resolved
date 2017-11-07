@@ -1,0 +1,8 @@
+github "BradLarson/GPUImage2" "2683a19d88b3b1b30d58e7ab0cd60d57b1790b37"
+github "Quick/Nimble" "v7.0.2"
+github "Quick/Quick" "v1.2.0"
+github "ReactiveX/RxSwift" "4.0.0"
+github "RxSwiftCommunity/RxGesture" "1.2.1"
+github "RxSwiftCommunity/RxSwiftExt" "3.0.0"
+github "heyjerks/ReduxSwift" "1.0"
+github "robb/Cartography" "3.0.0"
