@@ -10,6 +10,8 @@
 		4B342A141FB2141E006FD363 /* FoundationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD422F31FB213B400B66658 /* FoundationSpec.swift */; };
 		4B342A171FB224D0006FD363 /* RxSwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A151FB224B6006FD363 /* RxSwiftSpec.swift */; };
 		4B342A1B1FB225D0006FD363 /* ThenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A191FB2254C006FD363 /* ThenSpec.swift */; };
+		4B342A241FB247DE006FD363 /* CoreMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A231FB247DE006FD363 /* CoreMedia.swift */; };
+		4B342A261FB24897006FD363 /* CoreVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A251FB24897006FD363 /* CoreVideo.swift */; };
 		4B7752EC1FB1EAAA007B288E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752EA1FB1EAAA007B288E /* Main.storyboard */; };
 		4B7752EE1FB1EAAA007B288E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752ED1FB1EAAA007B288E /* Assets.xcassets */; };
 		4B7752F11FB1EAAA007B288E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752EF1FB1EAAA007B288E /* LaunchScreen.storyboard */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		4B342A151FB224B6006FD363 /* RxSwiftSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSpec.swift; sourceTree = "<group>"; };
 		4B342A191FB2254C006FD363 /* ThenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThenSpec.swift; sourceTree = "<group>"; };
+		4B342A231FB247DE006FD363 /* CoreMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMedia.swift; sourceTree = "<group>"; };
+		4B342A251FB24897006FD363 /* CoreVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreVideo.swift; sourceTree = "<group>"; };
 		4B7752E31FB1EAA9007B288E /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7752EB1FB1EAAA007B288E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B7752ED1FB1EAAA007B288E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +64,6 @@
 		4BD422A01FB2102D00B66658 /* ReduxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReduxSwift.framework; path = Carthage/Build/iOS/ReduxSwift.framework; sourceTree = "<group>"; };
 		4BD422A11FB2102D00B66658 /* RxSwiftExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwiftExt.framework; path = Carthage/Build/iOS/RxSwiftExt.framework; sourceTree = "<group>"; };
 		4BD422A21FB2102D00B66658 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		4BD422A31FB2102D00B66658 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = Carthage/Build/iOS/GPUImage.framework; sourceTree = "<group>"; };
 		4BD422A41FB2102D00B66658 /* RxReduxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxReduxSwift.framework; path = Carthage/Build/iOS/RxReduxSwift.framework; sourceTree = "<group>"; };
 		4BD422A51FB2102E00B66658 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		4BD422A61FB2102E00B66658 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 				4B342A191FB2254C006FD363 /* ThenSpec.swift */,
 			);
 			path = FoundationSpec;
+			sourceTree = "<group>";
+		};
+		4B342A221FB247C3006FD363 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B342A231FB247DE006FD363 /* CoreMedia.swift */,
+				4B342A251FB24897006FD363 /* CoreVideo.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		4B7752DA1FB1EAA9007B288E = {
@@ -175,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				4BD422A51FB2102E00B66658 /* Cartography.framework */,
-				4BD422A31FB2102D00B66658 /* GPUImage.framework */,
 				4BD422A01FB2102D00B66658 /* ReduxSwift.framework */,
 				4BD422A21FB2102D00B66658 /* RxCocoa.framework */,
 				4BD4229F1FB2102D00B66658 /* RxGesture.framework */,
@@ -199,6 +210,7 @@
 		4BD422BA1FB211AA00B66658 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4B342A221FB247C3006FD363 /* Core */,
 				4BD422CB1FB211AA00B66658 /* Foundation */,
 				4BD422C71FB211AA00B66658 /* UIKit */,
 				4BD422BB1FB211AA00B66658 /* RxSwift */,
@@ -435,10 +447,12 @@
 				4BD422ED1FB2132200B66658 /* Date.swift in Sources */,
 				4BD422D21FB211AA00B66658 /* Log.swift in Sources */,
 				4BD422EA1FB211ED00B66658 /* Then.swift in Sources */,
+				4B342A241FB247DE006FD363 /* CoreMedia.swift in Sources */,
 				4BD422EB1FB2132200B66658 /* Sequence.swift in Sources */,
 				4BD422E11FB211AA00B66658 /* UIImage.swift in Sources */,
 				4BD422D91FB211AA00B66658 /* SerialDispatchQueueScheduler.swift in Sources */,
 				4BD422D81FB211AA00B66658 /* SharedSequenceConvertibleType.swift in Sources */,
+				4B342A261FB24897006FD363 /* CoreVideo.swift in Sources */,
 				4BD422EF1FB2132200B66658 /* NSObject.swift in Sources */,
 				4BD422DD1FB211AA00B66658 /* ObservableType.swift in Sources */,
 				4BD4227A1FB1EF0F00B66658 /* AppDelegate.swift in Sources */,
