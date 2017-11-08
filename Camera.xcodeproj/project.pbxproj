@@ -12,6 +12,8 @@
 		4B342A1B1FB225D0006FD363 /* ThenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A191FB2254C006FD363 /* ThenSpec.swift */; };
 		4B342A241FB247DE006FD363 /* CoreMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A231FB247DE006FD363 /* CoreMedia.swift */; };
 		4B342A261FB24897006FD363 /* CoreVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B342A251FB24897006FD363 /* CoreVideo.swift */; };
+		4B3D2B081FB335C20079C669 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2B071FB335C20079C669 /* Camera.swift */; };
+		4B3D2B0B1FB377120079C669 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2B0A1FB377120079C669 /* CameraViewController.swift */; };
 		4B7752EC1FB1EAAA007B288E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752EA1FB1EAAA007B288E /* Main.storyboard */; };
 		4B7752EE1FB1EAAA007B288E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752ED1FB1EAAA007B288E /* Assets.xcassets */; };
 		4B7752F11FB1EAAA007B288E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7752EF1FB1EAAA007B288E /* LaunchScreen.storyboard */; };
@@ -51,6 +53,8 @@
 		4B342A191FB2254C006FD363 /* ThenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThenSpec.swift; sourceTree = "<group>"; };
 		4B342A231FB247DE006FD363 /* CoreMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMedia.swift; sourceTree = "<group>"; };
 		4B342A251FB24897006FD363 /* CoreVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreVideo.swift; sourceTree = "<group>"; };
+		4B3D2B071FB335C20079C669 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		4B3D2B0A1FB377120079C669 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		4B7752E31FB1EAA9007B288E /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7752EB1FB1EAAA007B288E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B7752ED1FB1EAAA007B288E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +127,24 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		4B3D2AFD1FB315C60079C669 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4B3D2B071FB335C20079C669 /* Camera.swift */,
+			);
+			name = Camera;
+			path = Sources/Camera;
+			sourceTree = "<group>";
+		};
+		4B3D2B091FB377060079C669 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B3D2B0A1FB377120079C669 /* CameraViewController.swift */,
+			);
+			name = ViewControllers;
+			path = Sources/ViewControllers;
+			sourceTree = "<group>";
+		};
 		4B7752DA1FB1EAA9007B288E = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +169,8 @@
 			children = (
 				4BD422BA1FB211AA00B66658 /* Extensions */,
 				4BD422B61FB211AA00B66658 /* Foundation */,
+				4B3D2AFD1FB315C60079C669 /* Camera */,
+				4B3D2B091FB377060079C669 /* ViewControllers */,
 				4BD422791FB1EF0F00B66658 /* AppDelegate.swift */,
 				4B7752F81FB1EB42007B288E /* Storyboards */,
 				4B7752FB1FB1EB62007B288E /* Supporting Files */,
@@ -444,6 +468,7 @@
 			files = (
 				4BD422EC1FB2132200B66658 /* Collection.swift in Sources */,
 				4BD422EE1FB2132200B66658 /* String.swift in Sources */,
+				4B3D2B081FB335C20079C669 /* Camera.swift in Sources */,
 				4BD422ED1FB2132200B66658 /* Date.swift in Sources */,
 				4BD422D21FB211AA00B66658 /* Log.swift in Sources */,
 				4BD422EA1FB211ED00B66658 /* Then.swift in Sources */,
@@ -454,6 +479,7 @@
 				4BD422D81FB211AA00B66658 /* SharedSequenceConvertibleType.swift in Sources */,
 				4B342A261FB24897006FD363 /* CoreVideo.swift in Sources */,
 				4BD422EF1FB2132200B66658 /* NSObject.swift in Sources */,
+				4B3D2B0B1FB377120079C669 /* CameraViewController.swift in Sources */,
 				4BD422DD1FB211AA00B66658 /* ObservableType.swift in Sources */,
 				4BD4227A1FB1EF0F00B66658 /* AppDelegate.swift in Sources */,
 			);
