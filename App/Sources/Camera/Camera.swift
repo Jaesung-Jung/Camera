@@ -27,6 +27,11 @@ import AVFoundation
 final class Camera: NSObject {
 
     let session = AVCaptureSession()
+    var previewView: CameraPreviewView? {
+        didSet {
+            previewView?.device = metalDevice
+        }
+    }
 
     private(set) var position: AVCaptureDevice.Position
 
@@ -38,12 +43,16 @@ final class Camera: NSObject {
 
     private let sampleBufferQueue = DispatchQueue(label: "Camera.sampleBufferQueue")
 
+    private let metalDevice = MTLCreateSystemDefaultDevice()!
+    private let textureCache: CVMetalTextureCache
+
     required init?(position: AVCaptureDevice.Position) {
         guard let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: position) else {
             return nil
         }
         self.position = position
         self.camera = camera
+        self.textureCache = CVMetalTextureCache.create(with: metalDevice)
 
         super.init()
 
@@ -83,8 +92,11 @@ extension Camera {
 
     private func addVideoInputOutput(camera: AVCaptureDevice) {
         let output = AVCaptureVideoDataOutput().then {
+            $0.videoSettings = [String(kCVPixelBufferPixelFormatTypeKey): kCVPixelFormatType_32BGRA]
             $0.setSampleBufferDelegate(self, queue: sampleBufferQueue)
+            $0.connection(with: .video)?.videoOrientation = .portrait
         }
+
         addInput(device: camera)
         addOutput(output)
 
@@ -114,6 +126,23 @@ extension Camera: AVCaptureVideoDataOutputSampleBufferDelegate {
         _ output: AVCaptureOutput,
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection) {
+
+        guard let view = previewView else {
+            return
+        }
+        guard let pixelBuffer = sampleBuffer.pixelBuffer() else {
+            return
+        }
+        //swiftlint:disable line_length
+        guard let texture = textureCache.createTexture(from: pixelBuffer, planeIndex: 0, format: .bgra8Unorm).metalTexture else {
+            return
+        }
+
+        DispatchQueue.main.async {
+            view.draw(texture: texture)
+        }
+
+        connection.videoOrientation = .portrait
     }
 
 }

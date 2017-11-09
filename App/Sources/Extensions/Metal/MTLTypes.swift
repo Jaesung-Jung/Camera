@@ -1,5 +1,5 @@
 //
-//  CameraViewController.swift
+//  MTLTypes.swift
 //
 //  Copyright (c) 2017 Jaesung Jung.
 //
@@ -21,21 +21,16 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import UIKit
-import Cartography
-import RxSwift
+import Metal.MTLTypes
 
-final class CameraViewController: UIViewController {
+extension MTLOrigin {
 
-    @IBOutlet weak var previewView: CameraPreviewView!
+    static let zero = MTLOrigin(x: 0, y: 0, z: 0)
 
-    private let camera = Camera(position: .back)!
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        camera.previewView = previewView
-        camera.session.sessionPreset = .photo
-        camera.session.startRunning()
-    }
+extension MTLSize {
+
+    static let zero = MTLSize(width: 0, height: 0, depth: 0)
 
 }

@@ -1,5 +1,5 @@
 //
-//  CameraViewController.swift
+//  CoreGraphics.swift
 //
 //  Copyright (c) 2017 Jaesung Jung.
 //
@@ -21,21 +21,34 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import UIKit
-import Cartography
-import RxSwift
+import CoreGraphics
 
-final class CameraViewController: UIViewController {
+extension CGSize {
 
-    @IBOutlet weak var previewView: CameraPreviewView!
+    func scaleFit(in rect: CGRect) -> CGSize {
+        let ratio = min(rect.width / width, rect.height / height)
+        let size = CGSize(
+            width: floor(width * ratio),
+            height: floor(height * ratio)
+        )
+        return size
+    }
 
-    private let camera = Camera(position: .back)!
+    func multiply(_ n: CGFloat) -> CGSize {
+        return CGSize(width: width * n, height: height * n)
+    }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        camera.previewView = previewView
-        camera.session.sessionPreset = .photo
-        camera.session.startRunning()
+}
+
+extension CGRect {
+
+    func scaleFit(in rect: CGRect) -> CGRect {
+        let size = self.size.scaleFit(in: rect)
+        let center = CGPoint(
+            x: (rect.maxX - size.width) * 0.5,
+            y: (rect.maxY - size.height) * 0.5
+        )
+        return CGRect(origin: center, size: size)
     }
 
 }
